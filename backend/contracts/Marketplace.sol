@@ -89,7 +89,6 @@ contract Marketplace is Pausable, Ownable, ReentrancyGuard {
     }
 
     function withdraw() external nonReentrant {
-        // TODO: TEST this fn must be payable?
         require(balance[msg.sender] > 0, "Account is not due payment.");
         uint256 amount = balance[msg.sender];
         balance[msg.sender] = 0;
@@ -115,9 +114,3 @@ contract Marketplace is Pausable, Ownable, ReentrancyGuard {
         _unpause();
     }
 }
-
-/** Features Upgrades:
-1.  make money stay in contract first (map which address owns how much), and require seller to "claim", 
-    if don't claim after X time, that amount is "forfeit"
-2.  auction within timeframe
- */

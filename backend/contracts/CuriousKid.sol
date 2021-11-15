@@ -300,8 +300,3 @@ contract CuriousKid is
         _unpause();
     }
 }
-
-/** TODO:
-0. gas test for all
-0. make payable kolek monayyy - make auto set amount??
-*/
