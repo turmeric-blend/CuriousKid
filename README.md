@@ -2,7 +2,7 @@
 ### NFT as a collectable
 
 # TODO: add GIF link
-![alt](https://github.com/pappas999/Link-My-Ride/blob/master/src/web-app/public/Link-My-Ride-architecture.png)
+![alt](https://github.com/turmeric-blend/CuriousKid/blob/master/backend/assets_demo/images/demo.gif)
 
 ## Description
 
