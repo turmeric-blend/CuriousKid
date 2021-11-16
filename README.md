@@ -16,21 +16,44 @@
 Curious Kid consists of 2 parts, the backend and frontend.
 
 ### Backend - requires both python and node.js
-0. npm install
+```
+~$ cd backend
+~$ npm install
+```
+##### NFT Art Generation
 1. Change the `assets_demo` folder name to `assets`
 2. Open `NFT Art Generator.ipynb`, and follow the instructions and each cell
-3. `assets/images/main` and `assets/metadata/main` folder should be populated with 8 images and metadata respectively
-4. and these should have been uploaded to nft.storage
-5. copy the CIDs and replace them with the CIDs in `initBaseURI` and `temporaryURI` of deploy/1_deploy.js
-6. run `npx hardhat deploy --network rinkeby` to deploy and try it out!
-7. copy deployed_contract_details folder into frontend folder's src folder to get started with the DAPP to interact with contract
+3. after going through the notebook, the following should have occured:
+    - `assets/images/main` and `assets/metadata/main` folder should be populated with 8 images and metadata respectively
+    - image and URI metadata should have been uploaded to nft.storage and obtain CIDs
+
+##### Deploying to Rinkeby
+1. copy the CIDs and replace them with the CIDs in `initBaseURI` and `temporaryURI` of deploy/1_deploy.js
+2. run `npx hardhat deploy --network rinkeby` to deploy and try it out!
+3. deployed_contract_details folder should have been created after deployment, copy this into frontend folder's src folder to get started with the DAPP to interact with contract
 
 ### Frontend
-0. npm install
+```
+~$ cd frontend
+~$ npm install
+```
 
 ## Testing
 ```
+~$ cd backend
 ~$ npx hardhat test
+```
+or for a summary of contract test coverage
+```
+~$ cd backend
+~$ npx hardhat coverage
+```
+
+## Helpful Tasks
+
+1. check contract size
+```
+~$ yarn run hardhat size-contracts
 ```
 
 
