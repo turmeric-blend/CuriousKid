@@ -15,7 +15,7 @@
 
 Curious Kid consists of 2 parts, the backend and frontend.
 
-## Backend - requires both python and node.js
+### Backend - requires both python and node.js
 0. npm install
 1. Change the `assets_demo` folder name to `assets`
 2. Open `NFT Art Generator.ipynb`, and follow the instructions and each cell
@@ -25,7 +25,14 @@ Curious Kid consists of 2 parts, the backend and frontend.
 6. run `npx hardhat deploy --network rinkeby` to deploy and try it out!
 7. copy deployed_contract_details folder into frontend folder's src folder to get started with the DAPP to interact with contract
 
-## Frontend
+### Frontend
 0. npm install
+
+## Testing
+```
+~$ npx hardhat test
+```
+
+
 
 # TODO: clean all TODOs
