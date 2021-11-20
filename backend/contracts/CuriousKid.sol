@@ -179,7 +179,7 @@ contract CuriousKid is
         mapIndexToTokenId[_index] = _getTokenIdAtIndex(
             totalTokensRemaining - 1
         );
-        mapIndexToTokenId[totalTokensRemaining - 1] = 0; // https://ethereum.stackexchange.com/questions/110848/get-random-number-without-replacement-in-solidity
+        // mapIndexToTokenId[totalTokensRemaining - 1] = 0; // https://ethereum.stackexchange.com/questions/110848/get-random-number-without-replacement-in-solidity
         totalTokensRemaining -= 1;
     }
 

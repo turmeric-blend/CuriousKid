@@ -1,0 +1,138 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <span style="margin: 0 auto">CuriousKid Application</span>
+</div>
+
+<!-- Mid Section Content -->
+<div class="content" role="main">
+
+    <div class="container text-center">
+        <img src="assets/demo.gif" class="img-fluid" width="350" height="350">
+    </div>
+
+    <div class="mt-3 mb-3">
+        <h4 *ngIf="connected === false && connectedToTheRightChain === false">Welcome to the CuriousKid Application.
+            Please connect to your MetaMask Account and login.</h4>
+    </div>
+
+    <!--  <div class="alert alert-success" role="alert" *ngIf="isMetaMaskInstalled()">-->
+    <!--    Yes MetaMask Installed Successfully-->
+    <!--  </div>-->
+
+    <div class="alert alert-danger" role="alert" *ngIf="!isMetaMaskInstalled()">
+        MetaMask not installed in browser. <br>
+        Please go and download MetaMask and install in your browser to continue - <a
+            href="https://metamask.io/index.html" target="_blank">MetaMask</a>
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="connectButton()"
+        *ngIf="isMetaMaskInstalled() && connected === false">Connect</button>
+
+    <button type="button" class="btn btn-danger" *ngIf="connected === true && connectedToTheRightChain === false"
+        disabled>
+        Connected but to the wrong chain. <br>
+        Please switch to Rinkeby Test Network.
+    </button>
+
+    <button type="button" (click)="changeNetwork()" class="btn btn-primary mt-3"
+        *ngIf="connected === true && connectedToTheRightChain === false">
+        Change to Rinkeby Test Network
+    </button>
+
+    <button type="button" class="btn btn-success" *ngIf="connected === true && connectedToTheRightChain === true"
+        disabled>Connected</button>
+
+    <div class="alert alert-dark mt-4" role="alert" *ngIf="connected === true && connectedToTheRightChain === true">
+        Contract Address: {{this?.contractDetails?.address}} <br>
+        <span *ngIf="this.userWalletDetails.signerChainId === 1">On Network: Mainnet Network</span>
+        <span *ngIf="this.userWalletDetails.signerChainId === 3">On Network: Ropsten Network</span>
+        <span *ngIf="this.userWalletDetails.signerChainId === 4">On Network: Rinkeby Network</span>
+        <span *ngIf="this.userWalletDetails.signerChainId === 5">On Network: Goerli Network</span>
+        <span *ngIf="this.userWalletDetails.signerChainId === 5">On Network: Kovan Network</span>
+        <br>
+        Account Address: {{this?.userWalletDetails?.signerAddress}} <br>
+        Account Balance: {{this?.userWalletDetails?.signerBalance}} <br>
+        Account Chain ID: {{this?.userWalletDetails?.signerChainId}} <br>
+    </div>
+
+    <!--  <div class="item" *ngIf="isLoading === true">-->
+    <!--    <ngx-skeleton-loader count="8" appearance="circle"></ngx-skeleton-loader>-->
+    <!--  </div>-->
+
+
+    <h3 style="font-size: 40px; font-weight: bold; margin-top: 30px"
+        *ngIf="connected === true && connectedToTheRightChain === true">
+        {{this.mintedTokenCount}} / 128
+    </h3>
+
+    <h3 *ngIf="connected === true && connectedToTheRightChain === true">
+        {{this.mintedTokenCount}}/128 CuriousKid NFT have already been minted! Mint yours today!
+    </h3>
+
+    <button (click)="mintTokens()" [disabled]="mintingProcessButton" type="button" class="btn btn-primary"
+        *ngIf="connected === true && connectedToTheRightChain === true && disableMintingButton === false && mintingProcessButton === false">
+        Mint
+    </button>
+
+    <button class="btn btn-primary mt-2" type="button" disabled
+        *ngIf="connected === true && connectedToTheRightChain === true && mintingProcessButton === true">
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Minting...
+    </button>
+
+    <button type="button" class="btn btn-secondary mt-3" disabled
+        *ngIf="connected === true && connectedToTheRightChain === true && disableMintingButton === true">
+        Minting disabled
+    </button>
+
+
+    <h3 style="font-size: 30px; font-weight: bold; margin-top: 30px"
+        *ngIf="connected === true && connectedToTheRightChain === true">
+        | My CuriousKid NFT Collectibles |
+    </h3>
+
+    <h4 style="font-size: 20px; font-weight: bold; margin-top: 15px"
+        *ngIf="connected === true && connectedToTheRightChain === true">
+        NFT Tokens Owned: {{this.nftTokensOwned}}
+    </h4>
+
+    <div *ngIf="connected === true && connectedToTheRightChain === true">
+        <div class="col-3" *ngFor="let url of this.imageURLs">
+            <img src="{{url}}" alt="{{url}}}" height="450" width="500">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  <div class="alert alert-dark" role="alert" style="margin-top: 100px">-->
+    <!--    Please make sure you are connected to the right network (Rinkeby Test Network) and the correct address. Please note: Once you make the purchase, you cannot undo this action.-->
+    <!--  </div>-->
+
+
+</div>
+
+<!--<router-outlet></router-outlet>-->

@@ -11,6 +11,8 @@
 - It's contract allow creators to have stable earnings
 - Perfect as gifts to kids. No time like the present to get them started on their blockchain journey.
 
+# TODO: add explanation/diagrams on how it works, features(how is it different)
+
 ## How to use
 
 Curious Kid consists of 2 parts, the backend and frontend.
@@ -37,6 +39,7 @@ Curious Kid consists of 2 parts, the backend and frontend.
 ~$ cd frontend
 ~$ npm install
 ```
+# TODO: frontend
 
 ## Testing
 ```
