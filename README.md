@@ -81,4 +81,6 @@ or for a summary of contract test coverage
 ~$ yarn run hardhat size-contracts
 ```
 
-##### slides: https://docs.google.com/presentation/d/1KcocioDvgS5a9oUONwC90rVMvaLUDNF004s-Ij3GsJ0/edit?usp=sharing
+
+## Others
+slides: https://docs.google.com/presentation/d/1KcocioDvgS5a9oUONwC90rVMvaLUDNF004s-Ij3GsJ0/edit?usp=sharing
