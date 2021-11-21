@@ -64,7 +64,6 @@ contract CuriousKid is
 
         require(_percentageRoyalty <= 100, "0 <= _percentageRoyalty <= 100");
         _setRoyalties(owner(), _percentageRoyalty * 100);
-        // TODO: cant seem to run setRoyalties(owner(), _percentageRoyalty); in constructor
     }
 
     //// --- main functions --- ////
