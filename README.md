@@ -60,8 +60,8 @@ Curious Kid consists of 2 parts, the backend and frontend.
 ```
 ~$ cd frontend
 ~$ npm install
+~$ npm start
 ```
-# TODO: frontend
 
 ## Testing
 ```
