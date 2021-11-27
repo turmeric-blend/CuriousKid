@@ -7,6 +7,7 @@
 Full scope of Curious Kid (some parts not covered in video submission): https://docs.google.com/presentation/d/1KcocioDvgS5a9oUONwC90rVMvaLUDNF004s-Ij3GsJ0/edit?usp=sharing
 
 ## Video Submission
+https://youtu.be/aH5rzrp4AmY
 
 ## Description
 
