@@ -1,5 +1,5 @@
 # Curious Kid - NFT Project
-### NFT as a collectable
+### NFT as a collectible
 
 ![alt](https://github.com/turmeric-blend/CuriousKid/blob/master/backend/assets_demo/images/demo.gif)
 
