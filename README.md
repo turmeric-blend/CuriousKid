@@ -41,6 +41,12 @@ Curious Kid owners (deployers) can optionally hide the NFT images even after min
 
 ![alt](https://github.com/turmeric-blend/CuriousKid/blob/master/backend/assets_demo/howitworks.png)
 
+## Future Direction
+- Deploy to Polygon mainnet
+- Expand collection
+- Airdrop to schools, get kids interested
+- Showcase the Royalty Standard further empowering creators/artists
+
 ## How to use
 
 Curious Kid consists of 2 parts, the backend and frontend.
