@@ -57,7 +57,7 @@ Curious Kid consists of 2 parts, the backend and frontend.
     - `assets/images/main` and `assets/metadata/main` folder should be populated with 8 images and metadata respectively
     - image and URI metadata should have been uploaded to nft.storage and obtain CIDs
 
-##### Deploying to Rinkeby
+##### Deploying to Rinkeby/Polygon Testnets
 1. copy the CIDs and replace them with the CIDs in `initBaseURI` and `temporaryURI` of deploy/1_deploy.js
 2. run `npx hardhat deploy --network rinkeby` to deploy and try it out!
 3. deployed_contract_details folder should have been created after deployment, copy this into frontend folder's src folder to get started with the DAPP to interact with contract
