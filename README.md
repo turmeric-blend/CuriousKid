@@ -12,7 +12,7 @@ https://youtu.be/aH5rzrp4AmY
 ## Description
 
 - Mint your very own Curious Kid from a collection size of 128
-- Curious users can mint their very own Curious Kid via <TODO: add link-to-website>
+- Curious users can mint their very own Curious Kid
 - Curious Kid guarantees that each NFT minted is unique
 - It's contract allow creators to have stable earnings
 - Perfect as gifts to kids. No time like the present to get them started on their blockchain journey.
