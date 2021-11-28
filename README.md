@@ -92,3 +92,6 @@ or for a summary of contract test coverage
 ```
 ~$ yarn run hardhat size-contracts
 ```
+
+## Extras
+`marketplace.sol` is a contract to demo EIP-2981 Royalty Standard.
